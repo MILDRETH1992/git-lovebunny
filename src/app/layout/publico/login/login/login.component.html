@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-6 mx-auto mt-5">
+    <div class="card">
+      <div class="card-body">
+        <h1 class="text-center">LOGIN</h1>
+        <form [formGroup]="myForm" (ngSubmit)="submitFormulario()">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Usuario</label>
+            <input formControlName="usuario" [class.is-invalid]="f.usuario.errors && f.usuario.touched" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu Usuario">
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+              Usuario obligatorio
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+            <input formControlName="password" [class.is-invalid]="f.password.errors && f.usuario.touched" type="password" class="form-control" id="exampleFormControlInput1" placeholder="Ingresa tu Contraseña">
+            <div id="validationServerUsernameFeedback" class="invalid-feedback">
+              Contraseña obligatoria
+            </div>
+          </div>
+          <div class="mb-3">
+            <button class="btn btn-success">Ingresar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
