@@ -14,6 +14,11 @@ export class AutenticacionService {
       return this.ingresar;
   }
 
+  public actualizarIngresar(ingresar:any):boolean{
+    this.ingresar = ingresar;
+      return this.ingresar;
+  }
+
   public habilitarlogeo(){
     return this.ingresar;
   }

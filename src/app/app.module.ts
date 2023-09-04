@@ -7,6 +7,7 @@ import { LoginComponent } from './layout/publico/login/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterLinkActive } from '@angular/router';
 import { PrincipalComponent } from './layout/privado/principal/principal.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PrincipalComponent } from './layout/privado/principal/principal.compone
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
